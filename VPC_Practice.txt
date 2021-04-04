@@ -1,0 +1,6 @@
+When a VPC is created, by default following components get created.
+
+
+RouteTable
+NACL
+Security group

@@ -1,0 +1,5 @@
+<html>
+<heading>
+This is my S3 static webpage!
+</heading>
+</html>

@@ -1,0 +1,66 @@
+https://www.cyberciti.biz/faq/how-to-list-all-installed-packages-debian-ubuntu/
+
+To get list of software installed 
+
+How to get a list of packages installed
+$ dpkg --get-selections | grep -v deinstall 
+
+$ dpkg-query -l
+
+Just want to see a list of packages only
+dpkg-query -f '${binary:Package}\n' -W
+
+just search specific packages using grep command:
+$ apt list --installed | grep php
+
+How to save a list to a text file
+
+$ dpkg --get-selections | grep -v deinstall > mylist.txt
+
+
+Add user in ubuntu
+
+adduser username
+
+Add user to the Sudo group
+
+usermod -aG sudo username
+
+
+To uninstall a software from Ubuntu
+
+sudo apt-get remove application name
+
+sudo apt-get purge
+
+
+APT- usage and example
+https://www.cyberciti.biz/faq/ubuntu-lts-debian-linux-apt-command-examples/
+
+list - list packages based on package names
+  search - search in package descriptions
+  show - show package details
+  install - install packages
+  remove - remove packages
+  autoremove - Remove automatically all unused packages
+  update - update list of available packages
+  upgrade - upgrade the system by installing/upgrading packages
+  full-upgrade - upgrade the system by removing/installing/upgrading packages
+  edit-sources - edit the source information file
+
+
+Grep examples
+
+https://www.cyberciti.biz/faq/debian-ubuntu-linux-grep-command-tutorial-examples/
+
+
+
+
+https://linuxize.com/post/how-to-create-a-sudo-user-on-ubuntu/
+
+https://linuxhint.com/30_bash_script_examples/#t1
+http://www.techieinspire.com/install-application-ubuntu-command-line/
+https://bash.cyberciti.biz/guide/Main_Page
+https://www.cyberciti.biz/faq/ubuntu-lts-debian-linux-apt-command-examples/
+https://www.cyberciti.biz/howto/question/linux/dpkg-cheat-sheet.php
+https://www.guru99.com/must-know-linux-commands.html#1
